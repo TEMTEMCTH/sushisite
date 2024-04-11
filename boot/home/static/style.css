@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(189, 220, 248);
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+header ul li {
+    list-style: none;
+    font-family: cursive;
+    font-size: 26px;
+    text-decoration: none;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+footer ul li{
+    list-style: none;
+    font-family: cursive;
+    font-size: 26px;
+}
+footer{
+    margin-top: 1000px;
+}
+.active{
+    color: rgb(241, 244, 252);
+    text-shadow: black 2px 2px;
+}
+header ul li a{
+    text-decoration: none;
+}
+footer ul li a{
+    text-decoration: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: black 1px 1px;
+}
+header a:hover {
+    color: rgb(235, 228, 241);
+    text-shadow: black 1px 1px;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% block content %}
+<header class="head">
+    <ul>
+        <li><a href="{% url 'HomePage' %}">Главная</a></li>
+        <li><a href="{% url 'ShopPage' %}" class="active">Магазин</a></li>
+        <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
+        <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
+        <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
+    </ul>
+</header>
+{% endblock %}
