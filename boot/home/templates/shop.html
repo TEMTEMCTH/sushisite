@@ -11,4 +11,19 @@
         <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
     </ul>
 </header>
+<h1>Shop</h1>
+    <div class="container">
+        <div class="row">
+            <div class="block_rolls row">
+                {% for item2 in susha %}
+                <div class="Block_content col-12 col-sm-6 col-md-3 ">
+                  <img class="image" src="{{ item2.img }}" alt="">
+                  <p class="description">{{ item2.name }}</p>
+                  <p class="cost"> Цена: {{ item2.price }} </p>
+                  <button class="but">Добавить в корзину</button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
