@@ -2,5 +2,17 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 {% block content %}
-
+    <h1>Корзина</h1>
+    <h2>В вашей корзине n товаров</h2>
+    
+    <div class="container_ezz">
+        <p class="vseg">Всего товаров, 0-шт</p>
+        <p class="itog">Итого(n)</p>
+        <button class="baton">
+            Заказать
+        </button>
+    </div>
+    <div class="container_Very">
+    
+    </div>
 {% endblock %}
