@@ -53,11 +53,11 @@ header a:hover {
     position: relative;
     background-color: rgb(117, 163, 248);
 }
-html{
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+    html{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
 .container_one{
     background-color: pink;
