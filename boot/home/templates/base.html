@@ -15,17 +15,17 @@
 </head>
 
 <body>
+    <header class="head">
+        <ul>
+            <li><a href="{% url 'HomePage' %}" class="active">Главная</a></li>
+            <li><a href="{% url 'ShopPage' %}">Магазин</a></li>
+            <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
+            <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
+            <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
+        </ul>
+    </header>
     {% block content %}
-    <div class="container">
-        <header class="head">
-            <ul>
-                <li><a href="{% url 'HomePage' %}" class="active">Главная</a></li>
-                <li><a href="{% url 'ShopPage' %}">Магазин</a></li>
-                <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
-                <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
-                <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
-            </ul>
-        </header>
+    <div class="container" style="display: flex; justify-content: center;">
         <h1>SushiSite</h1>
         <div class="block_main_img">
             <img src="" alt="">
@@ -38,16 +38,15 @@
         <div class="block_foot_text">
             <p class="text_foot"></p>
         </div>
-
-        <footer class="foot">
-            <ul>
-                <li><a href="">Спонсор</a></li>
-                <li><a href="">Реклама</a></li>
-                <li><a href="">Безопасность</a></li>
-            </ul>
-        </footer>
     </div>
     {% endblock %}
+    <footer class="foot">
+        <ul>
+            <li><a href="">Спонсор</a></li>
+            <li><a href="">Реклама</a></li>
+            <li><a href="">Безопасность</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

@@ -53,11 +53,11 @@ header a:hover {
     position: relative;
     background-color: rgb(117, 163, 248);
 }
-html{
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
+    html{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
 .container_one{
     background-color: pink;
@@ -164,3 +164,64 @@ a.nav-link{
     display: flex;
     justify-content: center;
 }
+h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 14px;
+}
+.baton{
+    background-color: rgb(208, 255, 255);
+    border-radius: 15px;
+    font-size: 30px;
+    background-color: rgb(154, 236, 250);
+    margin-top: 200px;
+    margin-left: 300px;
+    width: 200px;
+   
+}
+.itog{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 44px;
+    color: rgb(0, 255, 255);
+    padding-right: 400px;
+    margin-top: 10px;
+}
+.baton:hover{
+    background-color: rgb(11, 163, 252);
+}
+.container_ezz{
+    background-color: rgb(107, 184, 247);
+    width: 800px;
+    height: 400px;
+    margin-left: 1050px;
+    border-radius: 30px;
+    border: solid rgb(106, 156, 248);
+}
+.container_Very{
+    background-color: rgb(107, 184, 247);
+    width: 800px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 30px;
+    border: solid rgb(106, 156, 248);
+    margin-top: -400px;
+}
+.vseg{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    padding-right: 420px;
+    margin-top: 10px;
+}
+
+
+
+
