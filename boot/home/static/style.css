@@ -88,6 +88,8 @@ footer{
     position: relative;
     background-color: rgb(134, 181, 252);
     border-radius: 20px;
+    padding-bottom: 50px;
+    padding-left: 60px;
 }
 .container {
     display: flex;

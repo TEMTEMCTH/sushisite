@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% block content %}
 <header class="head">
     <ul>
-        <li><a href="{% url 'HomePage' %}">Главная</a></li>
-        <li><a href="{% url 'ShopPage' %}" class="active">Магазин</a></li>
+        <li><a href="{% url 'HomePage' %}" >Главная</a></li>
+        <li><a href="{% url 'ShopPage' %}"class="active">Магазин</a></li>
         <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
         <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
         <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
     </ul>
 </header>
-{% block content %}
 
 <h1>Shop</h1>
     <div class="container">
@@ -19,7 +20,7 @@
                 {% for item2 in susha %}
                 <div class="Block_content col-12 col-sm-6 col-md-3 ">
                   <img class="image" src="{{ item2.img }}" alt="">
-                  <p class="description">{{ item2.name }}</p>
+                  <p class="description">{{ item2.Name }}</p>
                   <p class="cost"> Цена: {{ item2.price }} </p>
                   <button class="but">Добавить в корзину</button>
                 </div>
