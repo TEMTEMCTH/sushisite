@@ -11,20 +11,23 @@
     </ul>
 </header>
 {% block content %}
-
-<h1>Shop</h1>
-    <div class="container">
-        <div class="row">
-            <div class="block_rolls">
-                {% for item2 in susha %}
-                <div class="Block_content col-12 col-sm-6 col-md-3 ">
-                  <img class="image" src="{{ item2.img }}" alt="">
-                  <p class="description">{{ item2.name }}</p>
-                  <p class="cost"> Цена: {{ item2.price }} </p>
-                  <button class="but">Добавить в корзину</button>
-                </div>
-                {% endfor %}
+<h1>Магазин</h1>
+<div class="container">
+    <div class="row">
+        <div class="block_rolls">
+            {% for item2 in susha %}
+            <div class="Block_content col-12 col-sm-6 col-md-3">
+                <img class="image" src="{{ item2.img }}" alt="">
+                <p class="description">{{ item2.name }}</p>
+                <p class="cost">Цена: {{ item2.price }}</p>
+                <button class="but" onclick="addToCart('{{ item2.name }}', '{{ item2.price }}')">Добавить в
+                    корзину</button>
             </div>
+            {% endfor %}
         </div>
     </div>
+</div>
+
+<script src="{% static 'shop.js' %}"></script>
+
 {% endblock %}

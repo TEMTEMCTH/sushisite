@@ -1,18 +1,29 @@
 {% extends 'base.html' %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
 {% block content %}
+<div class="container">
     <h1>Корзина</h1>
-    <h2>В вашей корзине n товаров</h2>
-    
-    <div class="container_ezz">
-        <p class="vseg">Всего товаров, 0-шт</p>
-        <p class="itog">Итого(n)</p>
-        <button class="baton">
-            Заказать
-        </button>
+    <div class="cart-items">
+        {% if cart_items %}
+            {% for item in cart_items %}
+                <div class="cart-item">
+                    <div class="item-details">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" class="item-image">
+                        <div class="item-info">
+                            <p class="item-name">{{ item.name }}</p>
+                            <p class="item-price">Цена: {{ item.price }}</p>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeItem('{{ item.id }}')">Удалить</button>
+                </div>
+            {% endfor %}
+       
+        {% endif %}
     </div>
-    <div class="container_Very">
-    
+    <div class="cart-total">
+        {% if total_price %}
+            <p class="total">Общая сумма: {{ total_price }}</p>
+            <button class="checkout-button">Оформить заказ</button>
+        {% endif %}
     </div>
+</div>
 {% endblock %}

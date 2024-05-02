@@ -4,4 +4,4 @@ from django.contrib import admin
 from .models import Sushi
 @admin.register(Sushi)
 class SushiAdmin(admin.ModelAdmin):
-    list_display = ('Name','img','price' )
+    list_display = ('name','img','price' )
