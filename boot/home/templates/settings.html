@@ -5,22 +5,25 @@
 {% block content %}
 <header class="head">
     <ul>
-        <li><a href="{% url 'HomePage' %}" >Главная</a></li>
+        <li><a href="{% url 'HomePage' %}">Главная</a></li>
         <li><a href="{% url 'ShopPage' %}">Магазин</a></li>
         <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
         <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
-        <li><a href="{% url 'SettingsPage' %}"class="active">Настройки</a></li>
+        <li><a href="{% url 'SettingsPage' %}" class="active">Настройки</a></li>
     </ul>
 </header>
 <h3>Профиль</h3>
 <div class="container_set">
-    <a class="one" href="">Привязать почту</a>
-    <a class="one" href="">Отвязать почту</a>
-    <a class="one" href="">Изменить пароль</a>
-    <a class="two" href="">Привязать Vk</a>
-    <a class="two" href="">Изменить язык</a>
-    <a class="two" href="">Подать жалобу</a>
-
+    <div class="one">
+        <a href="#">Привязать почту</a>
+        <a href="#">Отвязать почту</a>
+        <a href="#">Изменить пароль</a>
+    </div>
+    <div class="two">
+        <a href="#">Привязать Vk</a>
+        <a href="#">Изменить язык</a>
+        <a href="#">Подать жалобу</a>
+    </div>
 
 </div>
 {% endblock %}
