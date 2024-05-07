@@ -230,7 +230,7 @@ h3{
 
 .container_set{
     border-radius: 20px;
-        padding: 0px 10px;
+    padding: 0px 10px;
     background-color: rgb(134, 181, 252);
     width: 1000px;
     margin-left: auto;
@@ -255,7 +255,28 @@ h3{
     text-shadow: black 1px 1px;
     font-size: 20px;
     text-decoration: none;
-
+}
+.container_us{
+    border-radius: 20px;
+    padding: 0px 10px;
+    background-color: rgb(134, 181, 252);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    border: solid rgb(4, 142, 235);
+    display: flex;
+    justify-content: space-between;
+}
+.pon{
+    display: block;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.container_us a{
+    display: block;
 }
 
 
