@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     {% block content %}
     <header class="head">
         <ul>
@@ -27,22 +27,25 @@
         </ul>
     </header>
     <h1>SushiSite</h1>
-    <div class="block_main_img">
-            <p class="Top">Топ 3 самых часто покупаемых товаров</p>
-        <div class="block_body_img">
-            <img src="https://yalta.miyagi.com.ru/upload/iblock/a4a/a4ab32afe30e4db041f0ac9c6efc5686.jpg?1714039317549872" alt="Гейша">
-            <img src="https://kartinki.pics/uploads/posts/2022-08/1661273852_58-kartinkin-net-p-roll-beshenii-losos-oboi-74.jpg" alt="Канада">
-            <img src="https://yalta.miyagi.com.ru/upload/iblock/7ff/7ff9c96811ff17ec83edd8f39ba39465.jpg?1714039317549872" alt="Голдэн">
+    <p class="Top">Топ 3 самых часто покупаемых товаров</p>
+    <div class="block">
+        <div class="block_main_img">
+            <div class="block_body_img_one">
+                <img src="https://yalta.miyagi.com.ru/upload/iblock/a4a/a4ab32afe30e4db041f0ac9c6efc5686.jpg?1714039317549872"alt="Гейша">
+                <p>Гейша</p>
+            </div>
+            <div class="block_body_img_two">
+                <img src="https://kartinki.pics/uploads/posts/2022-08/1661273852_58-kartinkin-net-p-roll-beshenii-losos-oboi-74.jpg"alt="Канада">
+                <p>Канада</p>
+            </div>
+            <div class="block_body_img_three">
+                <img src="https://yalta.miyagi.com.ru/upload/iblock/7ff/7ff9c96811ff17ec83edd8f39ba39465.jpg?1714039317549872"alt="Голдэн">
+                <p>Голдэн</p>
+            </div>
         </div>
-        <div class="Ph">
-            <p>Гейша</p>
-            <p>Канада</p>
-            <p>Голдэн</p>
-        </div>
-        
-        <div class="block_foot_text">
-            <p class="text_foot"></p>
-        </div>
+    </div>
+    <div class="block_foot_text">
+        <p class="text_foot"></p>
     </div>
     {% endblock %}
     <footer class="foot">

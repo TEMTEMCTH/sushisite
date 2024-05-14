@@ -286,14 +286,30 @@ h3{
     margin-top: 200px;
     border-radius: 20px;
     margin-left: 300px;
+
 }
 .block_main_img{
-    background-color: rgb(253, 177, 149);
-    width: 2000px;
-    height: 800px;
-    margin-left: 280px;
-    border-radius: 180px;
-    border: solid rgb(255, 141, 100);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(252, 158, 124);
+    gap: 50px;
+    border-radius: 20px;
+}
+.block{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.block_main_img img{
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.block_main_img p{
+    margin-left: 90px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 .Top{
     display: flex;
@@ -302,19 +318,7 @@ h3{
     text-shadow: black 1px 1px;
     font-size: 20px;
 }
-.Ph{
-    margin-top: 300px;
-    margin-left: 380px;
-    display: flex;
-    gap: 480px;
-    
-}
-.Ph p{
-    font-size: 20px;
-    text-shadow: 1px 1px black;
-    color: white;
-    margin-top : -100px;
-}
+
 
 
 
