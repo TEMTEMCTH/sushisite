@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(189, 220, 248);
+    background-color: rgb(255, 203, 203);
+}
+header a{
+    color: rgb(172, 96, 83);
 }
 header ul {
     display: flex;
@@ -11,6 +14,7 @@ header ul li {
     font-family: cursive;
     font-size: 26px;
     text-decoration: none;
+    color: red;
 }
 footer ul{
     display: flex;
@@ -42,7 +46,7 @@ h1{
     text-shadow: black 1px 1px;
 }
 header a:hover {
-    color: rgb(235, 228, 241);
+    color: rgb(255, 255, 255);
     text-shadow: black 1px 1px;
 }
 .block_rolls {
@@ -51,7 +55,7 @@ header a:hover {
     padding: 0px 10px;
     align-items: center;
     position: relative;
-    background-color: rgb(117, 163, 248);
+    background-color: rgb(248, 117, 117);
 }
     html{
         width: 100%;
@@ -86,7 +90,7 @@ footer{
     padding: 0px 10px;
     align-items: center;
     position: relative;
-    background-color: rgb(134, 181, 252);
+    background-color: rgb(255, 126, 121);
     border-radius: 20px;
     padding-bottom: 50px;
     padding-left: 60px;
@@ -122,7 +126,7 @@ footer{
     border: 10px solid black;
 }
 a.nav-link{
-    color: white;
+    color: rgb(255, 130, 92);
     font-size: 20px;
     font-family: cursive;
 }
@@ -174,10 +178,9 @@ h2{
     font-size: 14px;
 }
 .baton{
-    background-color: rgb(208, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     font-size: 30px;
-    background-color: rgb(154, 236, 250);
     margin-top: 200px;
     margin-left: 300px;
     width: 200px;
@@ -189,28 +192,28 @@ h2{
     color: white;
     text-shadow: black 1px 1px;
     font-size: 44px;
-    color: rgb(0, 255, 255);
+    color: rgb(255, 107, 22);
     padding-right: 400px;
     margin-top: 10px;
 }
 .baton:hover{
-    background-color: rgb(11, 163, 252);
+    background-color: rgb(253, 0, 0);
 }
 .container_ezz{
-    background-color: rgb(107, 184, 247);
+    background-color: rgb(247, 158, 107);
     width: 800px;
     height: 400px;
     margin-left: 1050px;
     border-radius: 30px;
-    border: solid rgb(106, 156, 248);
+    border: solid rgb(253, 81, 29);
 }
 .container_Very{
-    background-color: rgb(107, 184, 247);
+    background-color: rgb(247, 158, 107);
     width: 800px;
     height: 400px;
     margin-left: 50px;
     border-radius: 30px;
-    border: solid rgb(106, 156, 248);
+    border: solid rgb(241, 59, 4);
     margin-top: -400px;
 }
 .vseg{
@@ -231,12 +234,12 @@ h3{
 .container_set{
     border-radius: 20px;
     padding: 0px 10px;
-    background-color: rgb(134, 181, 252);
+    background-color: rgb(255, 128, 105);
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px;
-    border: solid rgb(4, 142, 235);
+    border: solid rgb(250, 133, 0);
     display: flex;
     justify-content: space-between;
 }
@@ -259,12 +262,12 @@ h3{
 .container_us{
     border-radius: 20px;
     padding: 0px 10px;
-    background-color: rgb(134, 181, 252);
+    background-color: rgb(212, 160, 117);
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px;
-    border: solid rgb(4, 142, 235);
+    border: solid rgb(180, 77, 8);
     display: flex;
     justify-content: space-between;
 }
@@ -279,7 +282,7 @@ h3{
     display: block;
 }
 .container_set :hover {
-    color: rgb(195, 253, 253);
+    color: rgb(218, 125, 19);
 }
 .block_body_img img{
     height: 200px;
@@ -292,7 +295,7 @@ h3{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(252, 158, 124);
+    background-color: rgb(255, 149, 117);
     gap: 50px;
     border-radius: 20px;
 }
@@ -301,12 +304,14 @@ h3{
     padding-right: 350px;
 }
 .block_main_img img{
-    width: 250px;
+    width: 350px;
+    height: 300px;
     border-radius: 20px;
     margin-top: 50px;
+
 }
 .block_main_img p{
-    margin-left: 90px;
+    margin-left: 140px;
     font-size: 20px;
     color: white;
     text-shadow: 1px 1px black;
@@ -318,7 +323,14 @@ h3{
     text-shadow: black 1px 1px;
     font-size: 20px;
 }
-
+.ban{
+    width: 1500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+}
 
 
 
