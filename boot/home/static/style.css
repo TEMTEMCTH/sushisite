@@ -331,6 +331,18 @@ h3{
     margin-top: 100px;
     border-radius: 50px;
 }
+.btn.dropdown-toggle{
+    background-color: (255, 203, 203);
+}
+.dropdown-menu :hover{
+    color: rgb(160, 63, 6);
+}
+.dropdown-menu{
+    background-color: rgb(255, 118, 77);
+}
+.dropdown-item{
+    font-size: 20px;
+}
 
 
 
