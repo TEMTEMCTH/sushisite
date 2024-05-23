@@ -5,8 +5,8 @@
 {% block content %}
 <header class="head">
     <ul>
-        <li><a href="{% url 'HomePage' %}" >Главная</a></li>
-        <li><a href="{% url 'ShopPage' %}"class="active">Магазин</a></li>
+        <li><a href="{% url 'HomePage' %}">Главная</a></li>
+        <li><a href="{% url 'ShopPage' %}" class="active">Магазин</a></li>
         <li><a href="{% url 'BasketPage' %}">Корзина</a></li>
         <li><a href="{% url 'AboutUsPage' %}">О нас</a></li>
         <li><a href="{% url 'SettingsPage' %}">Настройки</a></li>
@@ -14,18 +14,55 @@
 </header>
 
 <h1>Shop</h1>
-    <div class="container">
-        <div class="row">
-            <div class="block_rolls">
-                {% for item2 in susha %}
-                <div class="Block_content col-12 col-sm-6 col-md-3 ">
-                  <img class="image" src="{{ item2.img }}" alt="">
-                  <p class="description">{{ item2.Name }}</p>
-                  <p class="cost"> Цена: {{ item2.price }} </p>
-                  <button class="but">Добавить в корзину</button>
-                </div>
-                {% endfor %}
+<div class="container">
+    <div class="reels-container">
+        {% for item2 in susha %}
+        <div class="reel" onclick="openModal('{{ item2.img }}', '{{ item2.Name }}', 'Описание товара...', '{{ item2.price }}')">
+            <img src="{{ item2.img }}" alt="Food Image">
+            <div class="reel-info">
+                <div class="reel-title">{{ item2.Name }}</div>
+                <div class="reel-price">Цена: {{ item2.price }}</div>
+                <button class="btn add-to-cart" onclick="addToCart('{{ item2.id }}', event)">Добавить в корзину</button>
             </div>
         </div>
+        {% endfor %}
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img src="" alt="Modal Food Image" id="modal-img">
+        <div class="modal-info">
+            <div class="modal-title" id="modal-title"></div>
+            <div class="modal-description" id="modal-description"></div>
+            <div class="modal-price" id="modal-price"></div>
+            <button class="btn add-to-cart" onclick="addToCart('{{ item2.id }}', event)">Добавить в корзину</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(img, title, description, price) {
+        var modal = document.getElementById("modal");
+        document.getElementById("modal-img").src = img;
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-description").innerText = description;
+        document.getElementById("modal-price").innerText = "Цена: " + price + " руб";
+
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+    }
+
+    function addToCart(itemId, event) {
+        event.stopPropagation();
+        alert('Товар добавлен в корзину!');
+        // Здесь можно добавить логику для добавления товара в корзину
+    }
+</script>
 {% endblock %}

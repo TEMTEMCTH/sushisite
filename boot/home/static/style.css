@@ -348,3 +348,167 @@ h3{
 
 
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.head ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    background: #333;
+}
+
+.head ul li {
+    display: inline;
+}
+
+.head ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.head ul li a.active {
+    background: #e91e63;
+}
+
+.container {
+    padding: 20px;
+}
+
+.reels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.reel {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.reel:hover {
+    transform: scale(1.05);
+}
+
+.reel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.reel-info {
+    padding: 15px;
+}
+
+.reel-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reel-price {
+    font-size: 1.1em;
+    color: #e91e63;
+    margin-top: 10px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-info {
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-size: 1em;
+    color: #666;
+}
+
+.modal-price {
+    font-size: 1.3em;
+    color: #e91e63;
+    margin-top: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
